@@ -1,62 +1,60 @@
 const products = [
     {
       id: 1,
-      name: "Product A",
-      price: 29.99,
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      name: "Professional DSLR Camera",
+      price: 299.99,
+      description: "High-quality digital camera perfect for photography enthusiasts and professionals.",
       category: "Electronics",
       stock: 10,
       rating: 4.5,
+      image: "/images/camera.jpg"
     },
     {
       id: 2,
-      name: "Product B",
-      price: 49.99,
-      description:
-        "Suspendisse potenti. In tincidunt nisl massa, at efficitur magna laoreet a.",
-      category: "Clothing",
+      name: "Wireless Audio Bundle", 
+      price: 149.99,
+      description: "Complete wireless audio solution with speakers and accessories for modern lifestyle.",
+      category: "Electronics",
       stock: 15,
       rating: 4.2,
+      image: "/images/audio-bundle.jpg"
     },
     {
       id: 3,
-      name: "Product C",
-      price: 19.99,
-      description:
-        "Pellentesque eu luctus nisl, at fringilla sem. Curabitur sed est in odio lacinia scelerisque.",
-      category: "Books",
+      name: "REMAX Portable Bluetooth Speaker",
+      price: 79.99,
+      description: "Compact wireless speaker with premium sound quality and portable design.",
+      category: "Electronics", 
       stock: 8,
       rating: 4.8,
+      image: "/images/speaker.jpg"
     },
     {
       id: 4,
-      name: "Product D",
-      price: 39.99,
-      description:
-        "Donec interdum massa nec risus dictum, non feugiat urna tincidunt.",
-      category: "Home Decor",
+      name: "Smart Fitness Roller",
+      price: 89.99,
+      description: "Advanced fitness recovery tool with smart technology for muscle therapy.",
+      category: "Health & Fitness",
       stock: 12,
       rating: 4.3,
+      image: "/images/fitness-roller.jpg"
     },
     {
       id: 5,
-      name: "Product E",
-      price: 59.99,
-      description:
-        "Vivamus volutpat elit ac consectetur elementum. Curabitur auctor euismod odio, id volutpat urna euismod vitae.",
-      category: "Beauty",
+      name: "Baseus Tech Hub Station", 
+      price: 199.99,
+      description: "All-in-one charging and connectivity hub for modern workspaces and devices.",
+      category: "Electronics",
       stock: 7,
       rating: 4.6,
+      image: "/images/tech-hub.jpg"
     },
   ];
   
-  // Dummy function for fetching product details (this would be replaced by an API call in a real-world app)
   export const getProductById = (id) => {
     return products.find((product) => product.id === parseInt(id, 10));
   };
   
-  // Dummy function for fetching all products (this would be replaced by an API call in a real-world app)
   export const getAllProducts = () => {
     return products;
   };
-  

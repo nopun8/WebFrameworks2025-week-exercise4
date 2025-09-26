@@ -16,7 +16,7 @@ const ProductsView = () => {
             name={product.name}
             id={product.id}
             price={product.price}
-            imagePath="http://via.placeholder.com/200x200"
+            imagePath={product.image || "http://via.placeholder.com/200x200"}
           />
         ))}
       </div>
